@@ -4,7 +4,7 @@ module.exports = {
     getAllProjects: async () => {
         return await Project.find();
     },
-    createProject: async (project) => {
+    createProject: async (title) => {
         const project= new Project({title});
         return await project.save();
     },

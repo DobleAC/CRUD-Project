@@ -3,7 +3,7 @@ const projectService = require('../services/projectService');
 
 const resolvers ={
     Query: {
-        project: async (parent, args) => {
+        projects: async (parent, args) => {
             return await projectService.getAllProjects();        
         }
     },

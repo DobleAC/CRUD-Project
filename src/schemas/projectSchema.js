@@ -6,8 +6,8 @@ const typeDefs = gql`
         title: String!
         completed: Boolean!
         description: String!
-        fechaInicio: Date!   
-        fechaFin: Date!
+        fechaInicio: String!   
+        fechaFin: String!
         status: String!
         presupuesto: Float!
     }
@@ -18,16 +18,16 @@ const typeDefs = gql`
         createProject(title: String!, 
             completed: Boolean!, 
             description: String!, 
-            fechaInicio: Date!, 
-            fechaFin: Date!, 
+            fechaInicio: String!, 
+            fechaFin: String!, 
             status: String!, 
             presupuesto: Float!
             ): Project!
         updateProject(_id: ID!, 
             completed: Boolean!, 
             description: String!, 
-            fechaInicio: Date!, 
-            fechaFin: Date!, 
+            fechaInicio: String!, 
+            fechaFin: String!, 
             status: String!, 
             presupuesto: Float!
             ): Project!
